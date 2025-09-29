@@ -46,11 +46,14 @@
                     <button class="login-btn" id="login-btn">Login</button>
                 </div>
 
-                <div class="nav-toggle" id="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    Menu
+                    <div class="hamburger-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </button>
             </div>
         </nav>
     </header>
@@ -73,7 +76,7 @@
                     </p>
                     <div class="hero-buttons">
                         <button class="btn btn-primary" id="join-ieee-btn">Join IEEE</button>
-                        <button class="btn btn-secondary" onclick="showSection('about')">Learn More</button>
+                        <button class="btn btn-secondary" data-section="about">Learn More</button>
                     </div>
                 </div>
                 <div class="hero-stats">
@@ -105,25 +108,21 @@
                         <div class="society-icon">📡</div>
                         <h3>Communication Society</h3>
                         <p>Advancing communication technologies and fostering innovation in wireless systems, networking, and signal processing.</p>
-                        <button class="society-btn">Learn More</button>
                     </div>
                     <div class="society-card">
                         <div class="society-icon">💻</div>
                         <h3>Computer Society</h3>
                         <p>Promoting computer science excellence through programming competitions, workshops, and emerging technology exploration.</p>
-                        <button class="society-btn">Learn More</button>
                     </div>
                     <div class="society-card">
                         <div class="society-icon">🌟</div>
                         <h3>SIGHT</h3>
                         <p>Special Interest Group on Humanitarian Technology - using technology to benefit humanity and address global challenges.</p>
-                        <button class="society-btn">Learn More</button>
                     </div>
                     <div class="society-card">
                         <div class="society-icon">👩‍💻</div>
                         <h3>WIE</h3>
                         <p>Women In Engineering - inspiring and empowering women in STEM fields through mentorship and professional development.</p>
-                        <button class="society-btn">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -158,9 +157,7 @@
                         </div>
                     </div>
                     <div class="about-image">
-                        <div class="image-placeholder">
-                            <p>IEEE SMVITM Campus</p>
-                        </div>
+                        <img src="images/asha_29820_bantakal.webp" alt="IEEE SMVITM Campus">
                     </div>
                 </div>
             </div>
