@@ -35,14 +35,16 @@ const teamData = [
         name: "Shreesha",
         position: "Front-End Developer",
         bio: "Leading IEEE SMVITM with vision and dedication to technical excellence.",
-        initials: "AS"
+        initials: "AS",
+          imageUrl: "images/aaa.jpg"
     },
     {
         id: 2,
         name: "Shrikanth Nayak",
         position: "UI/UX Designer",
         bio: "Coordinating activities and fostering collaboration across all societies.",
-        initials: "PN"
+        initials: "PN",
+          imageUrl: "images/shri.jpg"
     },
     
 ];
