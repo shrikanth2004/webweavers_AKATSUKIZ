@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Student Branch SMVITM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="vanta-bg"></div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>IEEE SMVITM</h2>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-section="about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link" data-section="team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#achievements" class="nav-link" data-section="achievements">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#publications" class="nav-link" data-section="publications">Publications</a>
+                    </li>
+                </ul>
+
+                <div class="nav-extras">
+                    <div class="notification-bell" id="notification-bell" style="display: none;">
+                        <span class="bell-icon">🔔</span>
+                        <span class="notification-count" id="notification-count">3</span>
+                    </div>
+                    <div class="user-profile" id="user-profile" style="display: none;">
+                        <span class="user-name" id="user-name">Welcome, User</span>
+                    </div>
+                    <button class="login-btn" id="login-btn">Login</button>
+                </div>
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <section id="home" class="section home-section active">
+            <div class="hero">
+                <video autoplay muted loop playsinline id="hero-video">
+                    <source src="college-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <div class="hero-content">
+                    <h1 class="hero-title">IEEE Student Branch SMVITM</h1>
+                    <p class="hero-subtitle">Advancing Technology for Humanity</p>
+                    <p class="hero-description">
+                        Join us in fostering innovation, technical excellence, and professional development 
+                        through cutting-edge research and collaborative learning experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="join-ieee-btn">Join IEEE</button>
+                        <button class="btn btn-secondary" onclick="showSection('about')">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>200+</h3>
+                        <p>Active Members</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Technical Events</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4</h3>
+                        <p>Active Societies</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="upcoming-events">
+                <h2>Upcoming Events</h2>
+                <div class="events-container" id="events-container">
+                </div>
+            </div>
+
+            <div class="societies-showcase">
+                <h2>Our Societies</h2>
+                <div class="societies-grid">
+                    <div class="society-card">
+                        <div class="society-icon">📡</div>
+                        <h3>Communication Society</h3>
+                        <p>Advancing communication technologies and fostering innovation in wireless systems, networking, and signal processing.</p>
+                        <button class="society-btn">Learn More</button>
+                    </div>
+                    <div class="society-card">
+                        <div class="society-icon">💻</div>
+                        <h3>Computer Society</h3>
+                        <p>Promoting computer science excellence through programming competitions, workshops, and emerging technology exploration.</p>
+                        <button class="society-btn">Learn More</button>
+                    </div>
+                    <div class="society-card">
+                        <div class="society-icon">🌟</div>
+                        <h3>SIGHT</h3>
+                        <p>Special Interest Group on Humanitarian Technology - using technology to benefit humanity and address global challenges.</p>
+                        <button class="society-btn">Learn More</button>
+                    </div>
+                    <div class="society-card">
+                        <div class="society-icon">👩‍💻</div>
+                        <h3>WIE</h3>
+                        <p>Women In Engineering - inspiring and empowering women in STEM fields through mentorship and professional development.</p>
+                        <button class="society-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h1>About IEEE SMVITM</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            The IEEE Student Branch at SMVITM is a dynamic community of engineering students 
+                            passionate about technology and innovation. Established with the vision to bridge 
+                            the gap between academic learning and real-world applications, our branch serves 
+                            as a platform for students to engage in cutting-edge research, professional development, 
+                            and community service.
+                        </p>
+                        <p>
+                            We are committed to fostering a culture of technical excellence, ethical responsibility, 
+                            and global awareness among our members. Through workshops, seminars, competitions, 
+                            and collaborative projects, we empower students to become tomorrow's technology leaders.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <h3>Our Mission</h3>
+                                <p>To advance technology for humanity by providing students with opportunities to develop technical skills, leadership abilities, and professional networks.</p>
+                            </div>
+                            <div class="highlight">
+                                <h3>Our Vision</h3>
+                                <p>To be the leading student organization that shapes the future of technology through innovation, collaboration, and ethical engineering practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <p>IEEE SMVITM Campus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section team-section">
+            <div class="container">
+                <h1>Our Team</h1>
+                <p class="section-subtitle">Meet the dedicated individuals driving innovation and excellence</p>
+                <div class="team-grid" id="team-grid">
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section achievements-section">
+            <div class="container">
+                <h1>Achievements</h1>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🏆</div>
+                        <h3>Best Student Branch Award</h3>
+                        <p>Recognized as the Outstanding Student Branch in Karnataka Section for exceptional technical activities and community engagement.</p>
+                        <span class="achievement-year">2023</span>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🥇</div>
+                        <h3>National Level Competition Winner</h3>
+                        <p>First place in IEEE National Student Paper Contest for innovative research in sustainable technology solutions.</p>
+                        <span class="achievement-year">2023</span>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">📊</div>
+                        <h3>Research Excellence Award</h3>
+                        <p>Published 12 research papers in IEEE conferences and journals, contributing to various fields of engineering.</p>
+                        <span class="achievement-year">2023</span>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🌍</div>
+                        <h3>Community Impact Award</h3>
+                        <p>Successfully completed 5 SIGHT projects benefiting local communities through technology-driven solutions.</p>
+                        <span class="achievement-year">2022-2023</span>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">👩‍🎓</div>
+                        <h3>WIE Recognition</h3>
+                        <p>Outstanding WIE Affinity Group award for promoting women's participation in engineering and technology.</p>
+                        <span class="achievement-year">2023</span>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">💡</div>
+                        <h3>Innovation Challenge</h3>
+                        <p>Winners of the IEEE Student Innovation Challenge for developing IoT-based smart campus solutions.</p>
+                        <span class="achievement-year">2022</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section publications-section">
+            <div class="container">
+                <h1>Publications</h1>
+                <div class="publications-filter">
+                    <button class="filter-btn active" data-category="all">All Publications</button>
+                    <button class="filter-btn" data-category="conference">Conferences</button>
+                    <button class="filter-btn" data-category="journal">Journals</button>
+                    <button class="filter-btn" data-category="workshop">Workshops</button>
+                </div>
+                <div class="publications-list" id="publications-list">
+                </div>
+            </div>
+        </section>
+
+    </main>
+<div id="login-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Member Login</h2>
+                <span class="close-btn" id="close-login">&times;</span>
+            </div>
+            
+            <div class="login-container" id="login-container">
+                <div class="login-form" id="login-form">
+                    <p>Access your IEEE SMVITM member dashboard</p>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <div class="login-links">
+                        <a href="#" id="show-forgot-form">Forgot Password?</a>
+                        <a href="#" id="show-register-form">New Member Registration</a>
+                    </div>
+                </div>
+                <div class="welcome-message" id="welcome-message" style="display: none;">
+                    <h2>Welcome Back!</h2>
+                    <p>You are successfully logged in to your IEEE SMVITM member dashboard.</p>
+                    <div class="user-actions">
+                        <button class="btn btn-secondary" onclick="logout()">Logout</button>
+                        <button class="btn btn-primary">View Dashboard</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-container" id="register-container" style="display: none;">
+                <p>Create your IEEE SMVITM member account</p>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="reg-name">Full Name</label>
+                        <input type="text" id="reg-name" name="reg-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email Address</label>
+                        <input type="email" id="reg-email" name="reg-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password</label>
+                        <input type="password" id="reg-password" name="reg-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+                <div class="login-links">
+                    <a href="#" class="back-to-login">Already have an account? Login</a>
+                </div>
+            </div>
+
+            <div class="login-container" id="forgot-password-container" style="display: none;">
+                <p>Enter your email to receive a password reset link</p>
+                <form id="forgotPasswordForm">
+                    <div class="form-group">
+                        <label for="forgot-email">Email Address</label>
+                        <input type="email" id="forgot-email" name="forgot-email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Reset Link</button>
+                </form>
+                <div class="login-links">
+                    <a href="#" class="back-to-login">Back to Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IEEE SMVITM</h3>
+                    <p>Advancing Technology for Humanity</p>
+                   
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>SMVITM Campus<br>
+                    Bantakal, Udupi<br>
+                    Karnataka, India</p>
+                    <p>Email: ieee@smvitm.ac.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IEEE Student Branch SMVITM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x67e8f9,
+      backgroundColor: 0x0,
+      points: 12.00,
+      maxDistance: 25.00,
+      spacing: 18.00
+    })
+    </script>
+</body>
+</html>
